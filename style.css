@@ -29,6 +29,8 @@ header.opening {
 
 .opening-wrapper {
 
+    overflow-x: hidden;
+
     position: relative;
     height: 66vh;
     height: 66lvh;
@@ -82,8 +84,10 @@ header.opening p {
     */
 
 .opening-xray {
-    --x: 40%;
-    --y: 40%;
+    --x: 50%;
+    --y: 50%;
+    --r: 0%;
+
     /*
     --x1: 40%;
     --y1: 40%;
@@ -92,7 +96,7 @@ header.opening p {
     */
     perspective: 600px;
     perspective-origin: var(--x) var(--y);
-    --clip: circle(33% at var(--x) var(--y));
+    --clip: circle(var(--r) at var(--x) var(--y));
     /*
     --clip: polygon(
         var(--x1) var(--y1),
@@ -119,7 +123,7 @@ header.opening p {
 }
 
 .opening-xray .threeD-shadow {
-    transform: translateZ(-75px);
+    transform: translateZ(-100px);
     opacity: .5;
 }
 

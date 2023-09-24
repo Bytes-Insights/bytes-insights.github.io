@@ -9,6 +9,13 @@ const { x, y, width, height } = shadowBbox;
 
 console.log(x, y, width, height);
 
+setTimeout(
+    () => {
+        shadow.style.setProperty('--r', '33%');
+    }, 2000
+)
+
+
 //const d = 30;
 
 //const h = +window.getComputedStyle(shadow).height.slice(0,-2);
