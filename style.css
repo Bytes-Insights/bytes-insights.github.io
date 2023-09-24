@@ -86,7 +86,7 @@ header.opening p {
     --y: 50%;
     perspective: 600px;
     perspective-origin: var(--x) var(--y);
-    --clip: circle(20% at var(--x) var(--y));
+    --clip: circle(33% at var(--x) var(--y));
     -webkit-clip-path: var(--mask);
     clip-path: var(--clip);
     color: transparent;
