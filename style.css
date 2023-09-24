@@ -2,7 +2,104 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-shadow: hotpink;
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+header.opening {
+
+    height: 100vh;
+    height: 100lvh;
+
+    width: 100vw;
+    width: 100lvw;
+
+    display: grid;
+    place-content: center;
+
+    background-color: #222;
+}
+
+.opening-wrapper {
+
+    position: relative;
+    height: 66vh;
+    height: 66lvh;
+
+    width: 90vw;
+    width: 90lvw;
+
+    max-width: 800px;
+}
+
+header.opening p {
+
+    margin: 0;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opening-xray, .threeD-main-text, .threeD-shadow, .opening-forefront {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+}
+
+.threeD-main-text, .threeD-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Rubik;
+    color: pink;
+    font-size: 3rem;
+} 
+    /*
+    text-shadow: 1px 1px var(--color-shadow), 
+        2px 2px var(--color-shadow), 
+        3px 3px var(--color-shadow), 
+        4px 4px var(--color-shadow), 
+        5px 5px var(--color-shadow), 
+        6px 6px var(--color-shadow);
+    */
+
+.threeD-shadow {
+    perspective: 600px;
+    perspective-origin: 10px 10px;
+}
+
+.threeD-main-text p {
+    opacity: .5;
+}
+
+.threeD-shadow p {
+    transform-style: preserve-3d;
+    transform: translateZ(-50px);
+    opacity: .25;
+}
+
+.opening-forefront {
+
+    font-family: 'Fira Code';
+    color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opening-forefront p {
+    height: auto;
 }
