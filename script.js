@@ -9,6 +9,8 @@ const { x, y, width, height } = shadowBbox;
 
 console.log(x, y, width, height);
 
+//const d = 30;
+
 //const h = +window.getComputedStyle(shadow).height.slice(0,-2);
 //const w = +window.getComputedStyle(shadow).width.slice(0,-2);
 
@@ -23,5 +25,12 @@ function mouseMove(e) {
     //shadow.style.perspectiveOrigin = `${dx}% ${dy}%`;
     shadow.style.setProperty('--x', `${dx}%`);
     shadow.style.setProperty('--y', `${dy}%`);
+
+    /*
+    shadow.style.setProperty('--x1', `${dx - d}%`);
+    shadow.style.setProperty('--y1', `${dy - d}%`);
+    shadow.style.setProperty('--x2', `${dx + d}%`);
+    shadow.style.setProperty('--y2', `${dy + d}%`);
+    */
 
 }

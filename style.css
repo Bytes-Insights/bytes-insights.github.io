@@ -83,11 +83,24 @@ header.opening p {
 
 .opening-xray {
     --x: 40%;
-    --y: 50%;
+    --y: 40%;
+    /*
+    --x1: 40%;
+    --y1: 40%;
+    --x2: 60%;
+    --y2: 60%;
+    */
     perspective: 600px;
     perspective-origin: var(--x) var(--y);
     --clip: circle(33% at var(--x) var(--y));
-    -webkit-clip-path: var(--mask);
+    /*
+    --clip: polygon(
+        var(--x1) var(--y1),
+        var(--x1) var(--y2),
+        var(--x2) var(--y2),
+        var(--x2) var(--y1)
+    );*/
+    -webkit-clip-path: var(--clip);
     clip-path: var(--clip);
     color: transparent;
 }
