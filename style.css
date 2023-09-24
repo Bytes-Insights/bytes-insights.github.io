@@ -82,8 +82,14 @@ header.opening p {
     */
 
 .opening-xray {
+    --x: 40%;
+    --y: 50%;
     perspective: 600px;
-    perspective-origin: 50% 50%;
+    perspective-origin: var(--x) var(--y);
+    --clip: circle(20% at var(--x) var(--y));
+    -webkit-clip-path: var(--mask);
+    clip-path: var(--clip);
+    color: transparent;
 }
 
 .threeD-main-text p {
