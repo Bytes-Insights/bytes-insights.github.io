@@ -65,6 +65,7 @@ header.opening p {
     font-family: Rubik;
     color: pink;
     font-size: 3rem;
+    text-transform: uppercase;
 } 
     /*
     text-shadow: 1px 1px var(--color-shadow), 
@@ -75,19 +76,24 @@ header.opening p {
         6px 6px var(--color-shadow);
     */
 
-.threeD-shadow {
+.opening-xray {
     perspective: 600px;
     perspective-origin: 10px 10px;
 }
 
 .threeD-main-text p {
-    opacity: .5;
+    opacity: .9;
+    z-index: 1;
 }
 
-.threeD-shadow p {
+.opening-xray div {
     transform-style: preserve-3d;
-    transform: translateZ(-50px);
-    opacity: .25;
+    transform: translateZ(-25px);
+}
+
+.opening-xray .threeD-shadow {
+    transform: translateZ(-75px);
+    opacity: .5;
 }
 
 .opening-forefront {

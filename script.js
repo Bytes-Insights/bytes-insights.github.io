@@ -1,4 +1,4 @@
-const shadow = document.querySelector('.threeD-shadow');
+const shadow = document.querySelector('.opening-xray'); //document.querySelector('.threeD-shadow');
 const header = document.querySelector('header');
 
 header.addEventListener('mousemove', mouseMove);
