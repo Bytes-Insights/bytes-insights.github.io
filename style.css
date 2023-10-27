@@ -34,6 +34,10 @@ h2 {
     margin-top: 3rem;
 }
 
+h3 {
+    /*transition: all .3s;*/
+}
+
 .team-container {
     margin-top: 2rem;
     display: flex;
@@ -84,6 +88,11 @@ hr {
     text-align: center;
 }
 
+.ul-spaced li + li {
+    margin-top: 1rem;
+
+}
+
 .wrapper-section {
     padding: .5rem;
     border: 1px solid transparent;
@@ -99,11 +108,11 @@ hr {
 }
 
 .wrapper-section:hover {
-    border: 1px solid var(--color-grid-text);
+    /*border: 1px solid var(--color-grid-text);
     background-image:
     repeating-linear-gradient(to right, transparent 0px, transparent 10px, var(--color-grid-text) 10px, var(--color-grid-text) 11px),
     repeating-linear-gradient(to bottom, transparent 0px, transparent 10px, var(--color-grid-text) 10px, var(--color-grid-text) 11px);
-
+    */
 }
 
 /* * * * * COVER */
