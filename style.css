@@ -30,7 +30,60 @@ body {
 h2 {
     border-bottom: 3px solid currentColor;
     padding-bottom: .5em;
+    margin-top: 3rem;
 }
+
+.team-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.member-text-content p {
+    text-align: center;
+    margin: .2em 0;
+    font-size: .8em;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-picture {
+    width: 300px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin: 3rem 0;
+}
+
+.final-p {
+    text-align: center;
+}
+
+/* * * * * COVER */
 
 header.opening {
 
@@ -174,3 +227,5 @@ header.opening p {
     height: auto;
     text-shadow: #333 0 0 2px;
 }
+
+/* * *  END COVER */
