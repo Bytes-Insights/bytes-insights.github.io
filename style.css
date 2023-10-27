@@ -6,11 +6,30 @@
     --color-hidden-text: hotpink;
     --color-shadow: hotpink;
     --color-grid: green;
+    --color-text: ghostwhite;
+    --color-bg: #222;
 }
 
 body {
     margin: 0;
     padding: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: Poppins;
+}
+
+.limited-width {
+    margin: 2rem auto;
+    max-width: 620px;
+}
+
+.limited-width p {
+    font-weight: 300;
+}
+
+h2 {
+    border-bottom: 3px solid currentColor;
+    padding-bottom: .5em;
 }
 
 header.opening {
@@ -24,12 +43,12 @@ header.opening {
     display: grid;
     place-content: center;
 
-    background-color: #222;
+    background-color: var(--color-bg);
 }
 
 .opening-wrapper {
 
-    overflow-x: hidden;
+    overflow: hidden;
 
     position: relative;
     height: 66vh;
@@ -143,7 +162,7 @@ header.opening p {
 
 .opening-forefront {
 
-    font-family: 'Fira Code';
+    font-family: 'Poppins';
     color: lightgreen;
     display: flex;
     justify-content: center;
@@ -153,4 +172,5 @@ header.opening p {
 
 .opening-forefront p {
     height: auto;
+    text-shadow: #333 0 0 2px;
 }
