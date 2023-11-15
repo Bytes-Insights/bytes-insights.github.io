@@ -12,7 +12,7 @@ console.log(x, y, width, height);
 setTimeout(
     () => {
         shadow.style.setProperty('--r', '33%');
-    }, 2000
+    }, 1000
 )
 
 
